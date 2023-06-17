@@ -1,11 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
-import style from './App.module.scss'
-import Main from './components/Main/Main';
+import Main from './pages/Main/Main';
+import { useTheme } from './theme/useTheme';
 
 const App: React.FC = () => {
-  return <Routes>
-    <Route path='/' element={<Main />} />
-  </Routes>
+ const {theme, toggleTheme} = useTheme();
+
+  return <div className={`app ${theme}`}>
+    <button onClick={toggleTheme}>Change Theme</button>
+    <Routes>
+      <Route path='/' element={<Main />} />
+    </Routes>
+  </div>
 }
 
 export default App;
