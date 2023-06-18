@@ -1,9 +1,9 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack'
-import { BuildOptions } from "./types/config";
+import { type BuildOptions } from './types/config';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
-export function buildPlugins({paths, mode}: BuildOptions):webpack.WebpackPluginInstance[] {
+export function buildPlugins ({ paths, mode }: BuildOptions): webpack.WebpackPluginInstance[] {
   return [
     new HtmlWebpackPlugin({
       template: paths.html

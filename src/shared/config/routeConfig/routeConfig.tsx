@@ -1,7 +1,7 @@
-import { MainPage } from "pages/MainPage"
-import { SecondPage } from "pages/SecondPage"
+import { MainPage } from 'pages/MainPage'
+import { SecondPage } from 'pages/SecondPage'
 
-import { RouteProps } from "react-router-dom"
+import { type RouteProps } from 'react-router-dom'
 
 export enum AppRoutes {
   Main = 'main',

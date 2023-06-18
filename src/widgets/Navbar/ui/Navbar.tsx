@@ -8,7 +8,7 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ className }) => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return <div className={classNames(style.navbar)}>
     <div className={style.links}>

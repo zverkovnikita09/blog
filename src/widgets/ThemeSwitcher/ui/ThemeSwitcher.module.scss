@@ -1,6 +1,7 @@
 .themeSwitcher {
   --switcher-height: 29px;
   --swither-width: 54px;
+
   background-color: transparent;
   border: 1px solid var(--inverted-primary-color);
   border-radius: 30px;
@@ -21,19 +22,6 @@
   }
 }
 
-.dark {
-  .moon {
-    filter: invert(1);
-  }
-
-  .sun {
-    filter: invert(0.7);
-  }
-
-  &::before {
-    transform: translateX(100%);
-  }
-}
 .sun {
   top: 2.5px;
   left: 3px;
@@ -48,4 +36,18 @@
   position: absolute;
   filter: invert(0.7);
   transition: 0.2s;
+}
+
+.dark {
+  .moon {
+    filter: invert(1);
+  }
+
+  .sun {
+    filter: invert(0.7);
+  }
+
+  &::before {
+    transform: translateX(100%);
+  }
 }

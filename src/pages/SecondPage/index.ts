@@ -1,1 +1,1 @@
-export {AsyncSecondPage as SecondPage} from './ui/SecondPage.async'
+export { AsyncSecondPage as SecondPage } from './ui/SecondPage.async'
