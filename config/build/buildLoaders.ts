@@ -3,6 +3,15 @@ import webpack from 'webpack'
 import { BuildOptions } from './types/config'
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|webp|woff|woff2)$/i,
+    use: [
+      {
+        loader: 'file-loader'
+      }
+    ]
+  }
+  
   const tsLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',
@@ -28,6 +37,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
   return [
     tsLoader,
-    cssLoaders
+    cssLoaders,
+    fileLoader
   ]
 }
