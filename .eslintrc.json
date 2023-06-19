@@ -1,11 +1,13 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:i18next/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -13,7 +15,8 @@
         "project": "./tsconfig.json"
     },
     "plugins": [
-        "react"
+        "react",
+        "i18next"
     ],
     "rules": {
         "react/jsx-indent": [
@@ -44,6 +47,12 @@
         "@typescript-eslint/space-before-function-paren": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         "react/prop-types": "off",
-        "@typescript-eslint/no-floating-promises": "off"
+        "@typescript-eslint/no-floating-promises": "off",
+        "i18next/no-literal-string": [
+            "error",
+            {
+                "markupOnly": true
+            }
+        ]
     }
 }
