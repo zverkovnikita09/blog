@@ -53,6 +53,13 @@
             {
                 "markupOnly": true
             }
+        ],
+        "max-len": [
+            "error",
+            {
+                "ignoreComments": true,
+                "code": 100
+            }
         ]
     }
 }
