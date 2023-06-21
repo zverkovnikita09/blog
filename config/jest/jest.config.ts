@@ -34,9 +34,15 @@ export default {
     'node'
   ],
   rootDir: '../../',
+  modulePaths: ['<rootDir>src'],
   testMatch: [
     '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
-  ]
+  ],
+  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+  moduleNameMapper: {
+    '\\.(s?css)$': 'identity-obj-proxy',
+    '\\.(png|jpe?g|gif|webp)$': '<rootDir>/config/jest/fileMock.ts'
+  }
 
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
