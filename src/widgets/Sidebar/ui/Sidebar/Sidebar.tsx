@@ -24,7 +24,7 @@ export const Sidebar: React.FC<SidebarProps> = () => {
     [style.collapsed]: collapsed
   }, [])}>
     <Button data-testid="toggle-sidebar" onClick={onToggle}>{t('Переключить')}</Button>
-    <ThrowErrorButton />
+    {/* <ThrowErrorButton /> */}
     <div className={style.switchers}>
       <ThemeSwitcher />
       <LangSwitcher />
