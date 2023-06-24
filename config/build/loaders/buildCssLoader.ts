@@ -1,5 +1,5 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import { BuildMode } from '../types/config'
+import { type BuildMode } from '../types/config'
 
 export function buildCssLoader(mode: BuildMode) {
   return {

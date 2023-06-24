@@ -1,8 +1,7 @@
 import path from 'path';
-import { BuildPaths } from '../build/types/config';
-import webpack from 'webpack'
+import { type BuildPaths } from '../build/types/config';
+import type webpack from 'webpack'
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
-
 
 export default ({ config }: { config: webpack.Configuration }) => {
   const paths: BuildPaths = {

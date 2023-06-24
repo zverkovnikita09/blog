@@ -6,7 +6,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 
 const meta = {
   title: 'shared/Button',
-  component: Button,
+  component: Button
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     children: 'Текст'
-  },
+  }
 };
 
 export const PrimaryDark: Story = {
@@ -29,14 +29,14 @@ export const Clear: Story = {
   args: {
     children: 'Текст',
     theme: ThemeButton.CLEAR
-  },
+  }
 };
 
 export const Outline: Story = {
   args: {
     children: 'Текст',
     theme: ThemeButton.OUTLINE
-  },
+  }
 };
 
 export const OutlineDark: Story = {

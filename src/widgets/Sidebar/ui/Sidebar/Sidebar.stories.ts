@@ -6,14 +6,14 @@ import { Theme } from 'app/providers/ThemeProvider';
 
 const meta = {
   title: 'widgets/Sidebar',
-  component: Sidebar,
+  component: Sidebar
 } satisfies Meta<typeof Sidebar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {
-  args: {},
+  args: {}
 };
 
 export const Dark: Story = {
