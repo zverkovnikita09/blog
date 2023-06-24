@@ -19,7 +19,7 @@ export function buildPlugins({ paths, mode }: BuildOptions): webpack.WebpackPlug
     })
   ]
 
-  if (IS_DEV) {
+  if (mode === 'development') {
     plugins.push(new BundleAnalyzerPlugin({
       openAnalyzer: false
     }))
