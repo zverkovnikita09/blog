@@ -9,7 +9,7 @@ import AppLink, { AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 import { useTranslation } from 'react-i18next'
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { AiFillHome } from "react-icons/ai";
-import { GrDocumentText } from "react-icons/gr";
+import { HiDocumentText } from "react-icons/hi";
 
 interface SidebarProps {
   className?: string
@@ -39,13 +39,13 @@ export const Sidebar: React.FC<SidebarProps> = () => {
       <AppLink theme={AppLinkTheme.INVERTED}
         className={style.link}
         to={RoutePath.main}>
-        <AiFillHome />
+        <AiFillHome size='1.2em'/>
         {!collapsed && t('Главная')}
       </AppLink>
       <AppLink theme={AppLinkTheme.INVERTED}
         className={style.link}
         to={RoutePath.second}>
-        <GrDocumentText />
+        <HiDocumentText size='1.2em' />
         {!collapsed && t('Вторая страница')}
       </AppLink>
     </div>
