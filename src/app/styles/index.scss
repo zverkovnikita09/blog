@@ -3,19 +3,22 @@
 @import "./themes/dark";
 @import "./themes/light";
 
-.app {
+body {
   font: var(--font-s);
-  background: var(--bg-color);
   color: var(--primary-color);
-  height: 100vh;
-  overflow: auto;
 }
 
-.content-page{
+.app {
+  height: 100vh;
+  overflow: auto;
+  background: var(--bg-color);
+}
+
+.content-page {
   display: flex;
 }
 
-.page-wrapper{
+.page-wrapper {
   flex-grow: 1;
   padding: 20px;
 }
