@@ -61,7 +61,7 @@ export const BackgroundInverted: Story = {
   }
 };
 
-export const Size_S: Story = {
+export const SizeS: Story = {
   args: {
     children: '>',
     theme: ButtonTheme.BACKGROUND,
@@ -69,7 +69,7 @@ export const Size_S: Story = {
   }
 };
 
-export const Size_M: Story = {
+export const SizeM: Story = {
   args: {
     children: '>',
     theme: ButtonTheme.BACKGROUND,
@@ -77,7 +77,7 @@ export const Size_M: Story = {
   }
 };
 
-export const Size_L: Story = {
+export const SizeL: Story = {
   args: {
     children: '>',
     theme: ButtonTheme.BACKGROUND,
@@ -85,7 +85,7 @@ export const Size_L: Story = {
   }
 };
 
-export const Square_S: Story = {
+export const SquareS: Story = {
   args: {
     children: '>',
     theme: ButtonTheme.BACKGROUND,
@@ -94,7 +94,7 @@ export const Square_S: Story = {
   }
 };
 
-export const Square_M: Story = {
+export const SquareM: Story = {
   args: {
     children: '>',
     theme: ButtonTheme.BACKGROUND,
@@ -103,7 +103,7 @@ export const Square_M: Story = {
   }
 };
 
-export const Square_L: Story = {
+export const SquareL: Story = {
   args: {
     children: '>',
     theme: ButtonTheme.BACKGROUND,

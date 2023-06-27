@@ -18,7 +18,7 @@ export enum ButtonSize {
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
   children: React.ReactNode
-  theme?: ButtonTheme,
+  theme?: ButtonTheme
   square?: boolean
   size?: ButtonSize
 }

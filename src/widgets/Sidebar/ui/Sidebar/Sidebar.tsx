@@ -8,8 +8,8 @@ import Button, { ButtonSize, ButtonTheme } from 'shared/ui/Button/Button'
 import AppLink, { AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 import { useTranslation } from 'react-i18next'
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
-import { AiFillHome } from "react-icons/ai";
-import { HiDocumentText } from "react-icons/hi";
+import { AiFillHome } from 'react-icons/ai';
+import { HiDocumentText } from 'react-icons/hi';
 
 interface SidebarProps {
   className?: string
