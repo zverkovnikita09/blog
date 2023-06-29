@@ -12,6 +12,8 @@ interface ThemeSwitcherProps {
 export const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ className }) => {
   const { theme, toggleTheme } = useTheme();
 
+  console.log(theme);
+
   return <Button
     className={classNames(style.themeSwitcher, {}, [className, style[theme]])}
     onClick={toggleTheme}>

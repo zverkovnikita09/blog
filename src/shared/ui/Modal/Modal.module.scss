@@ -22,7 +22,7 @@
 .content {
   padding: 20px;
   border-radius: 15px;
-  background-color: #e8e8ea;
+  background-color: var(--bg-color);
   overflow: auto;
   transform: scale(0.5);
   transition: 0.25s;
